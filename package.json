@@ -1,0 +1,29 @@
+{
+    "name": "notelanguage",
+    "displayName": "NoteLanguage",
+    "description": "highlight key word for a note",
+    "publisher": "xmac",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "notelanguage",
+            "aliases": ["notelang", "nlang"],
+            "extensions": [".nl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "colors": [
+
+        ],
+        "grammars": [{
+            "language": "notelanguage",
+            "scopeName": "source.notelanguage",
+            "path": "./syntaxes/.tmLanguage.json"
+        }]
+    }
+}
